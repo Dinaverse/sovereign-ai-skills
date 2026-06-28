@@ -1,6 +1,6 @@
 # 🤖 Sovereign AI Skills & Agents
 
-> *Custom skill definitions and integration tools extending local AI agents within the sovereign lab — enabling autonomous security operations, infrastructure monitoring, and predictive maintenance.*
+> *Custom skill definitions and integration tools extending local AI agents within the sovereign lab - enabling autonomous security operations, infrastructure monitoring, and predictive maintenance.*
 
 ---
 
@@ -49,4 +49,4 @@ A comprehensive bridge for interacting with local LLMs via the Ollama API. Provi
 
 ---
 
-*Skills that run locally — AI sovereignty in practice.*
+*Skills that run locally - AI sovereignty in practice.*
