@@ -1,24 +1,52 @@
 # 🤖 Sovereign AI Skills & Agents
 
-This repository contains custom skill definitions and integration scripts used to extend the capabilities of **Gemini CLI** and other AI agents within my sovereign infrastructure.
+> *Custom skill definitions and integration tools extending local AI agents within the sovereign lab — enabling autonomous security operations, infrastructure monitoring, and predictive maintenance.*
 
-## 🚀 Key Components
+---
 
-### 🧠 Custom Skills (`*.skill`)
-- **`security-ops.skill`**: Expert guidance for security monitoring, log analysis, and incident response.
-- **`predict-maint.skill`**: Specialized logic for predictive maintenance and infrastructure health monitoring.
+## 🎯 Overview
 
-### 🛠️ Integration Tools
-- **`ollama_suite.py`**: A comprehensive bridge for interacting with local LLMs via the Ollama API, including custom generation and management functions.
-- **`native_security_tools_function.py`**: Python-based function definitions that allow AI agents to interface natively with system security tools.
+This repository defines custom skills and integration bridges used by local AI agents (Gemini CLI, Ollama-backed agents) to interact with the lab's infrastructure. Skills encode domain-specific expertise so AI agents can reason about security events, infrastructure health, and maintenance workflows without relying on external services.
 
-## 🏗️ Usage
-These skills are designed to be activated within a Gemini CLI session to provide context-aware expertise and tool-calling capabilities.
+---
 
-```bash
-# Example of activating a skill
-gemini --activate-skill security-ops.skill
+## 🧠 Custom Skill Definitions
+
+| Skill | Description |
+|-------|-------------|
+| `security-ops.skill` | Expert guidance for security monitoring, log analysis, and incident response workflows |
+| `predict-maint.skill` | Predictive maintenance logic for infrastructure health monitoring and failure anticipation |
+
+---
+
+## 🛠️ Integration Tools
+
+### `ollama_suite.py`
+A comprehensive bridge for interacting with local LLMs via the Ollama API. Provides structured prompt management, context injection, and response parsing for agent workflows.
+
+---
+
+## 🔗 Ecosystem Integration
+
+```
+[Local AI Agent (Gemini CLI / Ollama)]
+              │
+     [sovereign-ai-skills]
+      ├── security-ops.skill  ──→ [cybersecurity-lab-automation]
+      ├── predict-maint.skill ──→ [sovereign-ai-infrastructure]
+      └── ollama_suite.py     ──→ [local-ai-sovereign-stack]
 ```
 
 ---
-*Developed by Dina - Building autonomous, sovereign intelligence.*
+
+## 🔗 Related Repositories
+
+| Repository | Role |
+|------------|------|
+| [`local-ai-sovereign-stack`](https://github.com/Dinaverse/local-ai-sovereign-stack) | Ollama runtime |
+| [`cybersecurity-lab-automation`](https://github.com/Dinaverse/cybersecurity-lab-automation) | Security automation target |
+| [`sovereign-ai-infrastructure`](https://github.com/Dinaverse/sovereign-ai-infrastructure) | Infrastructure context |
+
+---
+
+*Skills that run locally — AI sovereignty in practice.*
